@@ -57,11 +57,11 @@ From `src/`, use the same environment interpreter:
 
 ```powershell
 & ..\.venv\Scripts\python.exe -B -m unittest discover -s ..\tests -v
-& ..\.venv\Scripts\python.exe -B ..\checks\contract_regressions.py
+& ..\.venv\Scripts\python.exe -B -m unittest discover -s ..\checks -p contract_regressions.py -v
 ```
 
 POSIX equivalents are `../.venv/bin/python -B -m unittest discover -s ../tests -v`
-and `../.venv/bin/python -B ../checks/contract_regressions.py`.
+and `../.venv/bin/python -B -m unittest discover -s ../checks -p contract_regressions.py -v`.
 The second command is a separate set of contract checks, not part of normal test discovery.
 Fixtures are synthetic, including intentionally malformed records and explicit fake secret markers.
 
