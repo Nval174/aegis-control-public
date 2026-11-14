@@ -1,0 +1,2 @@
+Tcp: MaxConn CurrEstab InSegs OutSegs RetransSegs
+Tcp: -1 0 0 0 0

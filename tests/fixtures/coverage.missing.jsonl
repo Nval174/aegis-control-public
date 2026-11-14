@@ -1,0 +1,1 @@
+{"service_id":"lab-web","source":"proxy","metric":"latency_ms","route":"/","state":"OBSERVED","value":0,"observed_at":100,"collected_at":101}

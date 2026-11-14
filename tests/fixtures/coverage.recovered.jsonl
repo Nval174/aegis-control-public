@@ -1,0 +1,2 @@
+{"service_id":"lab-web","source":"proxy","metric":"requests_total","route":"/","state":"OBSERVED","value":4,"observed_at":99,"collected_at":101}
+{"service_id":"lab-web","source":"proxy","metric":"requests_total","route":"/","state":"OBSERVED","value":0,"observed_at":140,"collected_at":150}

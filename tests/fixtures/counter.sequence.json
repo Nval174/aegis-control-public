@@ -1,0 +1,11 @@
+{
+  "counter_id": "synthetic-counter",
+  "generation": "epoch-1",
+  "steps": [
+    {"value": 10, "observed_at": 100, "expected": ["BASELINE", "no_prior_baseline", null, null]},
+    {"value": 17, "observed_at": 110, "expected": ["AVAILABLE", "difference", 7, 10]},
+    {"value": 3, "observed_at": 120, "expected": ["UNAVAILABLE", "counter_decreased", null, null]},
+    {"value": 5, "observed_at": 130, "expected": ["BASELINE", "no_prior_baseline", null, null]},
+    {"value": 9, "observed_at": 140, "expected": ["AVAILABLE", "difference", 4, 10]}
+  ]
+}

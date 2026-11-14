@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "settings": {
+    "max_keys": 16,
+    "retention_seconds": 60,
+    "max_age": 60
+  },
+  "events": [
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 1,
+      "at": 100,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 0,
+          "observed_at": 100,
+          "collected_at": 100
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Synthetic development example, not discovered inventory or deployment approval.
+# This checker cannot activate controls. All optional integrations stay disabled.
+schema_version = 1
+mode = "observe"
+
+[optional_integrations]
+flask_to_ad = false
+windows_event_forwarding = false
+cloudfront_waf = false
+home_gateway_api = false
+
+[[services]]
+id = "lab-web"
+ingress_profile = "direct_host"
+protected_ports = [80, 443]

@@ -1,0 +1,14 @@
+Ip: Forwarding DefaultTTL InReceives OutRequests
+Ip: 2 64 4294967296 987
+Icmp: InMsgs OutMsgs
+Icmp: 2 1
+IcmpMsg: InType0 InType8
+IcmpMsg: 2 1
+IcmpMsg: OutType0 OutType8
+IcmpMsg: 3 4
+Tcp: RtoAlgorithm RtoMin RtoMax MaxConn ActiveOpens PassiveOpens AttemptFails EstabResets CurrEstab InSegs OutSegs RetransSegs InErrs OutRsts InCsumErrors
+Tcp: 1 200 120000 -1 4 5 6 7 3 12345 23456 17 0 9 0
+Udp: InDatagrams NoPorts InErrors OutDatagrams
+Udp: 100 0 0 200
+UdpLite: InDatagrams NoPorts InErrors OutDatagrams
+UdpLite: 0 0 0 0

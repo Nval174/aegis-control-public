@@ -1,0 +1,10 @@
+* text=auto eol=lf
+# Preserve exact synthetic parser inputs.
+/tests/fixtures/** -text whitespace=cr-at-eol
+/src/aegis_control/netstat_snapshot.py -text whitespace=cr-at-eol
+/tests/test_netstat.py -text whitespace=cr-at-eol
+
+# Preserve intentionally blank negative/boundary fixtures.
+/tests/fixtures/nginx-batch-design/blank-only.synthetic.batch whitespace=cr-at-eol,-blank-at-eof
+/tests/fixtures/nginx-batch-design/blank-between.synthetic.batch whitespace=cr-at-eol,-blank-at-eof
+/tests/fixtures/nginx-batch-design/extra-final-blank.synthetic.batch whitespace=cr-at-eol,-blank-at-eof

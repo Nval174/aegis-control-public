@@ -1,0 +1,4 @@
+Tcp: InSegs OutSegs RetransSegs
+Tcp: 12345 23456 17
+Udp: InDatagrams
+Udp: PRIVATE

@@ -1,0 +1,9 @@
+[
+  {"sequence":1,"at":100,"value":10,"expected":["unanchored","BASELINE","no_prior_baseline",null]},
+  {"sequence":2,"at":110,"value":17,"expected":["adjacent","AVAILABLE","difference",7]},
+  {"sequence":4,"at":120,"value":25,"expected":["gap","UNAVAILABLE","delivery_gap",null]},
+  {"sequence":5,"at":130,"value":30,"expected":["adjacent","BASELINE","no_prior_baseline",null]},
+  {"sequence":6,"at":140,"value":34,"expected":["adjacent","AVAILABLE","difference",4]},
+  {"sequence":7,"at":150,"value":0,"missing":true,"expected":["adjacent","UNAVAILABLE","current_missing",null]},
+  {"sequence":8,"at":160,"value":40,"expected":["adjacent","BASELINE","no_prior_baseline",null]}
+]

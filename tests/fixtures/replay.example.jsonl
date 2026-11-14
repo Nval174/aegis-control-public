@@ -1,0 +1,3 @@
+{"service_id":"lab-web","source":"proxy","metric":"requests_total","state":"OBSERVED","value":0,"observed_at":100,"collected_at":101,"route":"/login?synthetic=discard"}
+{"service_id":"lab-web","source":"proxy","metric":"latency_ms","state":"OBSERVED","value":12.5,"observed_at":150,"collected_at":151,"route":"/unlisted/123"}
+{"service_id":"lab-web","source":"cloudfront_waf","metric":"requests_total","state":"NOT_APPLICABLE","value":null,"observed_at":null,"collected_at":151,"route":"/"}

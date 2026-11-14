@@ -1,0 +1,391 @@
+{
+  "kind": "synthetic future batch expectations; not a wire schema or executed batch report",
+  "settings": {
+    "service_id": "lab-web",
+    "catalog": [
+      "/",
+      "/login"
+    ]
+  },
+  "fixtures": [
+    {
+      "id": "empty",
+      "bytes": 0,
+      "lf": 0,
+      "largest_span_bytes": 0,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "EMPTY",
+        "total": 0,
+        "valid": 0,
+        "invalid": 0,
+        "entries": []
+      }
+    },
+    {
+      "id": "ordered",
+      "bytes": 271,
+      "lf": 3,
+      "largest_span_bytes": 91,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "ALL_VALID",
+        "total": 3,
+        "valid": 3,
+        "invalid": 0,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 2,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 0,
+              "request_time_ms": 0
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 3,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mixed",
+      "bytes": 339,
+      "lf": 3,
+      "largest_span_bytes": 136,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 3,
+        "valid": 2,
+        "invalid": 1,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 2,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          },
+          {
+            "record_number": 3,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "OTHER",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "blank-between",
+      "bytes": 181,
+      "lf": 3,
+      "largest_span_bytes": 91,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 3,
+        "valid": 2,
+        "invalid": 1,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 2,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          },
+          {
+            "record_number": 3,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 0,
+              "request_time_ms": 0
+            },
+            "reason": "record_validated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "crlf",
+      "bytes": 182,
+      "lf": 2,
+      "largest_span_bytes": 92,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "ALL_VALID",
+        "total": 2,
+        "valid": 2,
+        "invalid": 0,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 2,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 0,
+              "request_time_ms": 0
+            },
+            "reason": "record_validated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bad-rows",
+      "bytes": 23,
+      "lf": 2,
+      "largest_span_bytes": 21,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 2,
+        "valid": 0,
+        "invalid": 2,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          },
+          {
+            "record_number": 2,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          }
+        ]
+      }
+    },
+    {
+      "id": "unterminated",
+      "bytes": 179,
+      "lf": 1,
+      "largest_span_bytes": 91,
+      "failed_predicates": [
+        "unterminated_tail"
+      ],
+      "future_expectation": {
+        "fatal": true,
+        "report": null
+      }
+    },
+    {
+      "id": "bare-cr",
+      "bytes": 93,
+      "lf": 1,
+      "largest_span_bytes": 93,
+      "failed_predicates": [
+        "bare_cr"
+      ],
+      "future_expectation": {
+        "fatal": true,
+        "report": null
+      }
+    },
+    {
+      "id": "escaped-control",
+      "bytes": 114,
+      "lf": 1,
+      "largest_span_bytes": 114,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 1,
+        "valid": 0,
+        "invalid": 1,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          }
+        ]
+      }
+    },
+    {
+      "id": "blank-only",
+      "bytes": 1,
+      "lf": 1,
+      "largest_span_bytes": 1,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 1,
+        "valid": 0,
+        "invalid": 1,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          }
+        ]
+      }
+    },
+    {
+      "id": "extra-final-blank",
+      "bytes": 92,
+      "lf": 2,
+      "largest_span_bytes": 91,
+      "failed_predicates": [],
+      "future_expectation": {
+        "state": "HAS_INVALID",
+        "total": 2,
+        "valid": 1,
+        "invalid": 1,
+        "entries": [
+          {
+            "record_number": 1,
+            "state": "VALID",
+            "record": {
+              "service_id": "lab-web",
+              "route": "/login",
+              "status": 200,
+              "logged_at_ms": 100000,
+              "request_time_ms": 25
+            },
+            "reason": "record_validated"
+          },
+          {
+            "record_number": 2,
+            "state": "INVALID",
+            "record": null,
+            "reason": "record_rejected"
+          }
+        ]
+      }
+    }
+  ],
+  "generated": [
+    {
+      "id": "records-256",
+      "bytes": 23296,
+      "lf": 256,
+      "largest_span_bytes": 91,
+      "failed_predicates": []
+    },
+    {
+      "id": "records-257",
+      "bytes": 23387,
+      "lf": 257,
+      "largest_span_bytes": 91,
+      "failed_predicates": [
+        "record_count"
+      ]
+    },
+    {
+      "id": "row-exact",
+      "bytes": 16384,
+      "lf": 1,
+      "largest_span_bytes": 16384,
+      "failed_predicates": []
+    },
+    {
+      "id": "row-over",
+      "bytes": 16385,
+      "lf": 1,
+      "largest_span_bytes": 16385,
+      "failed_predicates": [
+        "record_bytes"
+      ]
+    },
+    {
+      "id": "total-exact",
+      "bytes": 1048576,
+      "lf": 64,
+      "largest_span_bytes": 16384,
+      "failed_predicates": []
+    },
+    {
+      "id": "total-over",
+      "bytes": 1048577,
+      "lf": 65,
+      "largest_span_bytes": 16384,
+      "failed_predicates": [
+        "total_bytes"
+      ]
+    }
+  ],
+  "exact_size_single_record": {
+    "service_id": "lab-web",
+    "route": "/login",
+    "status": 200,
+    "logged_at_ms": 100000,
+    "request_time_ms": 25
+  }
+}

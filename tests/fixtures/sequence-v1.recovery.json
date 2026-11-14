@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "settings": {
+    "max_keys": 16,
+    "retention_seconds": 60,
+    "max_age": 60
+  },
+  "events": [
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 1,
+      "at": 100,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 10,
+          "observed_at": 100,
+          "collected_at": 100
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 2,
+      "at": 110,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 17,
+          "observed_at": 110,
+          "collected_at": 110
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 3,
+      "at": 120,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 17,
+          "observed_at": 120,
+          "collected_at": 120
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 4,
+      "at": 130,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": null,
+          "observed_at": 130,
+          "collected_at": 130
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 5,
+      "at": 140,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 30,
+          "observed_at": 140,
+          "collected_at": 140
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 6,
+      "at": 150,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 34,
+          "observed_at": 150,
+          "collected_at": 150
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 8,
+      "at": 160,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 40,
+          "observed_at": 160,
+          "collected_at": 160
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 9,
+      "at": 170,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 50,
+          "observed_at": 170,
+          "collected_at": 170
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 10,
+      "at": 180,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 54,
+          "observed_at": 180,
+          "collected_at": 180
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 11,
+      "at": 190,
+      "sample": null,
+      "continuous": true,
+      "kind": "break"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 12,
+      "at": 200,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 60,
+          "observed_at": 200,
+          "collected_at": 200
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 13,
+      "at": 210,
+      "sample": null,
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 14,
+      "at": 220,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 70,
+          "observed_at": 220,
+          "collected_at": 220
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 15,
+      "at": 230,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-2",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 80,
+          "observed_at": 230,
+          "collected_at": 230
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 16,
+      "at": 240,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 90,
+          "observed_at": 240,
+          "collected_at": 240
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    },
+    {
+      "key": {
+        "service_id": "a",
+        "source": "proxy",
+        "metric": "requests_total",
+        "route": "/"
+      },
+      "sequence": 17,
+      "at": 250,
+      "sample": {
+        "counter_id": "producer-1",
+        "generation": "epoch-1",
+        "observation": {
+          "service_id": "a",
+          "source": "proxy",
+          "metric": "requests_total",
+          "route": "/",
+          "state": "OBSERVED",
+          "value": 94,
+          "observed_at": 250,
+          "collected_at": 250
+        }
+      },
+      "continuous": true,
+      "kind": "sample"
+    }
+  ]
+}

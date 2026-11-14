@@ -1,0 +1,20 @@
+# Synthetic schema-2 intent. No target discovery, integrations or enforcement.
+schema_version = 2
+mode = "observe"
+
+[optional_integrations]
+flask_to_ad = false
+windows_event_forwarding = false
+cloudfront_waf = false
+home_gateway_api = false
+
+[[services]]
+id = "lab-web"
+ingress_profile = "direct_host"
+protected_ports = [80, 443]
+
+[[required_observations]]
+service_id = "lab-web"
+source = "proxy"
+metric = "requests_total"
+route = "/"

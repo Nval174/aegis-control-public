@@ -1,0 +1,6 @@
+Ip: Forwarding DefaultTTL InReceives
+Ip: 2 64 0
+Icmp: InMsgs OutMsgs
+Icmp: 0 0
+Udp: InDatagrams OutDatagrams
+Udp: 0 0

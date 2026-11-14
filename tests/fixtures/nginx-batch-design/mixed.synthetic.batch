@@ -1,0 +1,3 @@
+{"schema_version":1,"msec":"100.000","uri":"/login","status":"200","request_time":"0.025"}
+{"schema_version":1,"msec":"100.000","uri":"/login","status":"200","request_time":"0.025","SYNTHETIC_PRIVATE_FIELD":"SYNTHETIC_SECRET"}
+{"schema_version":1,"msec":"100.000","uri":"/users/SYNTHETIC_PRIVATE_ID","status":"200","request_time":"0.025"}
